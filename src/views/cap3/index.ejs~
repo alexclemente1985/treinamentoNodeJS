@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Capítulo 3</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+	<% if(file && file.data && file.data.trim()!==''){%>		
+		<h1>Leitura de arquivo assíncrona</h1>
+		<span><%= file.data%></span>
+	<%} else {%>
+			<h1>Nenhum arquivo a ser lido assíncronamente de início...</h1>
+	<%}%>	
+	<% if(fileArray.length>0){%>		
+		<h1>Leitura de arquivos com async</h1>
+		<%fileArray.forEach(item => {%>
+			<span><%= item%></span>
+		<%})%>
+	<%} else {%>
+			<h1>Nenhum arquivo a ser lido com módulo async de início...</h1>
+	<%}%>	
+		
+	</body>
+</html>

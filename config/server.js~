@@ -1,0 +1,11 @@
+const express = require('express');
+const routes = require('../src/routes/index');
+
+const server = express();
+
+server.set('view engine','ejs');
+server.set('views','./src/views');
+
+server.use('/',routes);
+
+module.exports = server;

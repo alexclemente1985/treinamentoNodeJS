@@ -1,0 +1,9 @@
+const index = (req,res)=>{
+	res.render('home');
+}
+
+const testeIndex=(req,res)=>{
+	res.render('teste/index');
+}
+
+module.exports = {index, testeIndex}
