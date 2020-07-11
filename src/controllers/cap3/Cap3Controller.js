@@ -25,7 +25,6 @@ const cap3FileReader = (req, res) => {
 };
 
 const cap3Domains = function (req, res) {
-  //const file = "./src/public/carochinha.txt";
   const file = './src/public/fileExample.txt';
   fs.readFile(
     file,
